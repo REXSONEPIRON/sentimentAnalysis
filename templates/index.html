@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+ <head>
+ <title>Sentiment Analysis App</title>
+ <link rel=”stylesheet” href=”{{ url_for(‘static’, filename=’style.css’) }}”>
+ </head>
+ <body>
+<h2><center>Sentiment  Analysis App</center></h2>
+<h3><center>Type a sentence.Click on the submit button and wait for your prediction</center></h3>
+<form method=post action=”/results”>
+ <center>
+  <input type="text" name="text" class="Submit" placeholder="Search here!">
+  <input type="submit" name="submit" class="submit" value="Submit">
+ </center>
+ <div>
+
+ </div>
+</form>
+<br><center> {{output}} </center></br>
+</body>
+</html>
+
